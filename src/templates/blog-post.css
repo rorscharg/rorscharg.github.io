@@ -1,5 +1,7 @@
 .post-container {
   height: 100vh;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
 .post-content {
