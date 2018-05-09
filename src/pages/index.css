@@ -1,22 +1,25 @@
-.container {
+.index-content {
   margin: auto;
   width: 40%;
+  margin-top: 5vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 @media screen and (max-width: 1400px) {
-  .container {
+  .index-content {
     width: 60%;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .container {
+  .index-content {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .container {
+  .index-content {
     width: 98%;
   }
 }

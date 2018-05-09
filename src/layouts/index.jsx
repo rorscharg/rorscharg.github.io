@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Header from '../components/Header'
-import './layout.css'
+import './index.css'
 
 class Template extends React.Component {
   render() {
@@ -12,12 +11,7 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
-    return (
-      <div className="container">
-        <Header />
-        {children()}
-      </div>
-    )
+    return <div>{children()}</div>
   }
 }
 
