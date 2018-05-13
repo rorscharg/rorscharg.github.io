@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #404040;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  color: #808080;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+ul {
+  padding-left: 10px;
+}

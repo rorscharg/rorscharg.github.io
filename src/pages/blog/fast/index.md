@@ -1,7 +1,7 @@
 ---
-title: Fall
+title: Fast
 date: "2018-05-05T22:26:00.000Z"
-image: "./fall.jpg"
+image: "./fast.jpg"
 ---
 
 I really wish things would go faster,  

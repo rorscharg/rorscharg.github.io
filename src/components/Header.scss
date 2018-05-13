@@ -1,28 +1,31 @@
 .header {
-  display: grid;
-  grid-template-columns: 0% 100% 0%;
-  grid-template-areas: 'left title right';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   background-color: black;
   color: white;
-  /*border-radius: 10px;*/
   width: 100%;
   margin: auto;
+  height: 15vh;
 }
 
 .title {
-  grid-area: title;
   font-size: 2rem;
   text-align: center;
   padding-top: 1vh;
 }
 
+.left {
+  margin-left: 1vw;
+}
+
 .right {
-  grid-area: right;
+  margin-right: 1vw;
 }
 
 .menu-item-container {
   display: inline-block;
-  margin-left: 0.5vw;
-  font-size: 1.4vh;
+  margin-left: 1vw;
+  font-size: 1.5rem;
 }

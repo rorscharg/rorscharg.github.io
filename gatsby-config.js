@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: 'http://rorscharg.com',
   },
   plugins: [
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import './Header.css'
+import Link from 'gatsby-link'
+import './Header.scss'
 
 class Header extends Component {
     constructor(props) {
@@ -21,13 +21,16 @@ class Header extends Component {
         return (
             <div>
                 <header className="header">
-                    <h1 className="title">RORSCHARG</h1>
-                    <div className="right">
-                        {/*                        <MenuItem name="Home" link="/" />
+                    <div className="left">
+                        <MenuItem name="Home" link="/" />
                         <MenuItem name="Projects" link="/projects" />
+                    </div>
+                    <div className="title">
+                        <h1>RORSCHARG</h1>
+                    </div>
+                    <div className="right">
                         <MenuItem name="Blog" link="/blog" />
                         <MenuItem name="About" link="/about" />
-*/}{' '}
                     </div>
                 </header>
             </div>
@@ -38,9 +41,7 @@ class Header extends Component {
 function MenuItem(props) {
     return (
         <div className="menu-item-container">
-            <Link to={props.link}>
-                <h2> {props.name}</h2>
-            </Link>
+            <Link to={props.link}>{props.name}</Link>
         </div>
     )
 }
