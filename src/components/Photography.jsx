@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
+import Link from 'gatsby-link'
 import Images from './PhotographyProject'
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
 import './Photography.scss'
+const albums = {
+    '2017-summer-montreal': '72157665232130448',
+    '2017-summer-beauce': '72157692090128354',
+    '2017-fall-montreal': '72157692090175044',
+}
 
-const albums = [
+const albums_name = [
     '2017-fall-montreal',
     '2017-summer-beauce',
     '2017-summer-montreal',
@@ -18,17 +23,40 @@ const album_names = [
 class Photography extends Component {
     state = { albums: [] }
 
-    getAlbums = () => {
-        let promises = albums.map(queryParam =>
-            fetch(this.createFetchUrl(queryParam)).then(res => res.json())
-        )
-        Promise.all(promises).then(albums => {
-            this.setState({ albums })
-        })
+    buildFlickrPhotoApi = (farm, server, id, secret) => {
+        let string =
+            'https://farm' +
+            farm +
+            '.staticflickr.com/' +
+            server +
+            '/' +
+            id +
+            '_' +
+            secret +
+            '_h.jpg'
+        return string
     }
 
-    createFetchUrl = album_name => {
-        return '/flickr/' + album_name
+    getAlbums = () => {
+        let queryString =
+            'https://api.flickr.com/services/rest/?method=flickr.photosets.getphotos&format=json&user_id=156166587@N08&photoset_id=' +
+            '72157665232130448' +
+            '&api_key=856b7c68ff0760ad430e10b48c31c7be&format=json&nojsoncallback=1'
+
+        fetch(queryString).then(res => res.json().then(res => console.log(res)))
+        //     let photos = body.photoset.photo
+        //     let photoUrls = []
+        //     photos.forEach(function(photo, index) {
+        //         photoUrls[index] = buildFlickrPhotoApi(
+        //             photo.farm,
+        //             photo.server,
+        //             photo.id,
+        //             photo.secret
+        //         )
+        //     })
+        //     console.log(photoUrls)
+        //     this.state.albums = photoUrls
+        // })
     }
 
     componentDidMount() {
@@ -40,7 +68,7 @@ class Photography extends Component {
         var photographyProjects =
             albums.length > 0 ? <PhotographyProjects albums={albums} /> : null
 
-        return <Router>{photographyProjects}</Router>
+        return <div>{photographyProjects}</div>
     }
 }
 

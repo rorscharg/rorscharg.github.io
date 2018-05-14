@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Header from '../../../components/Header'
+import Photography from '../../../components/Photography'
 
 class BlogIndex extends React.Component {
   render() {
@@ -12,10 +13,7 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Header />
-        <div className="index-content">
-          <Helmet title={siteTitle} />
-          <h1> camarchetu </h1>
-        </div>
+        <Photography />
       </div>
     )
   }
