@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Header from '../../components/Header'
+import Header from '../../../components/Header'
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,18 +13,7 @@ class BlogIndex extends React.Component {
       <div>
         <Header />
         <div className="index-content">
-          <Helmet title={siteTitle} />
-          <h1>
-            <Link style={{ boxShadow: 'none' }} to="/projects/photography">
-              Photography
-            </Link>
-          </h1>
-          <br />
-          <h1>
-            <Link style={{ boxShadow: 'none' }} to="/projects/programming">
-              Programming
-            </Link>
-          </h1>
+          <h1>Under Construction</h1>
         </div>
       </div>
     )

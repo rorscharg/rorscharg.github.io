@@ -11,11 +11,10 @@
     border-style: none;
     max-height: 50vh;
     overflow: hidden;
-
 }
 
 .photography-project-box:active {
-    transition: background 0.2s ease, color 0.2s ease
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 .photography-project-box:hover {

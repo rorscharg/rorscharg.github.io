@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Header from '../../components/Header'
+import './about.scss'
 
 class BlogIndex extends React.Component {
   render() {
@@ -12,16 +13,22 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Header />
-        <div className="index-content">
-          <Helmet title={siteTitle} />
-          <h1> test </h1>
-          <Link style={{ boxShadow: 'none' }} to="/projects/photography">
-            Photography
-          </Link>
-          <br />
-          <Link style={{ boxShadow: 'none' }} to="/projects/photography">
+        <div className="about-container">
+          <div className="about-content">
+            <h1>Warning:</h1>
+            <p>
+              {' '}
+              If you fumble on this about section, the only thing you really
+              need to know is I fall under the raised by the internet archetype.
+              If some stereotype comes up in your head they probably apply to me
+            </p>
+            <h2>Current Interests</h2>
             Programming
-          </Link>
+            <br />
+            Music
+            <br />
+            Video Games
+          </div>
         </div>
       </div>
     )
