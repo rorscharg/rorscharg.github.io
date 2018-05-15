@@ -10,9 +10,9 @@ class BlogIndex extends React.Component {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
     const images = [
+      '2017_summer_montreal/love.jpg',
       '2017_summer_montreal/beaver.jpg',
       '2017_summer_montreal/envy.jpg',
-      '2017_summer_montreal/love.jpg',
       '2017_summer_montreal/meh.jpg',
       '2017_summer_montreal/monday.jpg',
       '2017_summer_montreal/reading.jpg',

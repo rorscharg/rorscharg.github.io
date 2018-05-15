@@ -18,11 +18,12 @@ class BlogIndex extends React.Component {
             <h1>Warning:</h1>
             <p>
               {' '}
-              If you fumble on this about section, the only thing you really
-              need to know is I fall under the raised by the internet archetype.
-              If some stereotype comes up in your head they probably apply to me
+              If you fumble on this about 'section', the only thing you really
+              need to know is I fall under the 'raised by the internet'
+              archetype. If some stereotype comes up in your head right now,
+              they probably apply to me
             </p>
-            <h2>Current Interests</h2>
+            <h2>Current Interests:</h2>
             Programming
             <br />
             Music

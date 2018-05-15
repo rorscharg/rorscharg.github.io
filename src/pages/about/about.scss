@@ -1,11 +1,10 @@
 .about-container {
-  height: 100vh;
+  overflow: auto;
 }
 
 .about-content {
   margin: auto;
   width: 40%;
-  margin-top: 5vh;
   padding-left: 1vw;
   padding-right: 1vw;
 }

@@ -26,7 +26,7 @@ class BlogIndex extends React.Component {
           name="Beauce, Summer  2017"
           link="/projects/photography/2017_summer_beauce"
           image="photography/2017_summer_beauce/again.jpg"
-          alt="2017_fall_montreal/back_turned.jpg"
+          alt="2017_summer_beauce/again.jpg"
         >
           {' '}
         </PhotographyProjectPreviewBox>
@@ -34,7 +34,7 @@ class BlogIndex extends React.Component {
           name="Montreal, Summer 2017"
           link="/projects/photography/2017_summer_montreal"
           image="photography/2017_summer_montreal/love.jpg"
-          alt="2017_summer_montreal/beaver.jpg"
+          alt="2017_summer_montreal/love.jpg"
         >
           {' '}
         </PhotographyProjectPreviewBox>
