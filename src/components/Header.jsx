@@ -8,7 +8,7 @@ class Header extends Component {
         this.toggle = this.toggle.bind(this)
         this.state = {
             isOpen: false,
-            windowWidth: 1200,
+            windowWidth: 1026,
         }
     }
 

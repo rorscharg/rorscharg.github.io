@@ -24,11 +24,17 @@ class BlogIndex extends React.Component {
               they probably apply to me
             </p>
             <h2>Current Interests:</h2>
+            Dogs
+            <br />
             Programming
             <br />
             Music
             <br />
             Video Games
+            <br />
+            Being a Riven main
+            <br />
+            Happiness
           </div>
         </div>
       </div>

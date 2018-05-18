@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Header from '../../../components/Header'
-import PhotographyProjectPreviewBox from '../../../components/PhotographyProjectPreviewBox'
+import Card from '../../../components/Card'
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,30 +14,30 @@ class BlogIndex extends React.Component {
       <div>
         <Header />
 
-        <PhotographyProjectPreviewBox
+        <Card
           name="Montreal, Fall 2017"
           link="/projects/photography/2017_fall_montreal"
-          image="photography/2017_fall_montreal/back_turned.jpg"
+          image="2017_fall_montreal/back_turned.jpg"
           alt="2017_fall_montreal/back_turned.jpg"
         >
           {' '}
-        </PhotographyProjectPreviewBox>
-        <PhotographyProjectPreviewBox
+        </Card>
+        <Card
           name="Beauce, Summer  2017"
           link="/projects/photography/2017_summer_beauce"
-          image="photography/2017_summer_beauce/again.jpg"
+          image="2017_summer_beauce/again.jpg"
           alt="2017_summer_beauce/again.jpg"
         >
           {' '}
-        </PhotographyProjectPreviewBox>
-        <PhotographyProjectPreviewBox
+        </Card>
+        <Card
           name="Montreal, Summer 2017"
           link="/projects/photography/2017_summer_montreal"
-          image="photography/2017_summer_montreal/love.jpg"
+          image="2017_summer_montreal/love.jpg"
           alt="2017_summer_montreal/love.jpg"
         >
           {' '}
-        </PhotographyProjectPreviewBox>
+        </Card>
       </div>
     )
   }

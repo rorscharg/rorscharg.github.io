@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Header from '../../components/Header'
+import Card from '../../components/Card'
 
 class BlogIndex extends React.Component {
   render() {
@@ -12,20 +13,22 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Header />
-        <div className="index-content">
-          <Helmet title={siteTitle} />
-          <h1>
-            <Link style={{ boxShadow: 'none' }} to="/projects/photography">
-              Photography
-            </Link>
-          </h1>
-          <br />
-          <h1>
-            <Link style={{ boxShadow: 'none' }} to="/projects/programming">
-              Programming
-            </Link>
-          </h1>
-        </div>
+        <Card
+          name="Photography"
+          link="/projects/photography/"
+          image="projects/photography/2017_fall_montreal/sipping.jpg"
+          alt="2017_fall_montreal/sipping.jpg"
+        >
+          {' '}
+        </Card>
+        <Card
+          name="Programming"
+          link="/projects/programming/"
+          image="projects/programming.png"
+          alt="programming.jpg"
+        >
+          {' '}
+        </Card>
       </div>
     )
   }
