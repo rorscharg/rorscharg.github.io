@@ -1,0 +1,2 @@
+webpackJsonp([49683490770531],{364:function(e,t){e.exports={data:{allMarkdownRemark:{edges:[{node:{excerpt:"I really wish things would go faster, I want to be motivated, to have a purpose, to end life in exhaustion because I’ve lived too much…",fields:{slug:"/blog/fast/"},frontmatter:{title:"Fast",date:"05 May, 2018"}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---blog-80d8795e61dca4bb53cd.js.map
