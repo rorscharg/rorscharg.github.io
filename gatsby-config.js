@@ -2,10 +2,13 @@ module.exports = {
   siteMetadata: {
     title: 'RORSCHARG',
     author: 'Rorscharg',
-    description: `Got my head underwater and I ain't coming up`,
+    description: `Rorscharg's personal webiste!!! Hooray!`,
     siteUrl: 'http://rorscharg.com',
   },
   plugins: [
+    {
+    resolve: `gatsby-plugin-sitemap`
+    },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
