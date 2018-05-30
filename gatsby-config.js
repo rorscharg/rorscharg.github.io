@@ -6,6 +6,14 @@ module.exports = {
     siteUrl: 'http://rorscharg.com',
   },
   plugins: [
+      {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto Mono`,
+        ]
+      }
+    },
     {
     resolve: `gatsby-plugin-sitemap`
     },
