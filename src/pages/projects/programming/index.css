@@ -1,0 +1,12 @@
+.footer {
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.external-links {
+    font-size: 50px;
+}
+
+.external-links:hover {
+    color: black;
+}

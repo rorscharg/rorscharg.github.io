@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
-import Images from './PhotographyProject'
 import './Card.scss'
 
 class PhotographyProjectPreviewBox extends Component {
@@ -9,6 +8,7 @@ class PhotographyProjectPreviewBox extends Component {
             <div className="card">
                 <Link to={this.props.link} className="card-link">
                     <div className="card-container">
+                        <div className="card-title">{this.props.name}</div>
                         <div className="card-image">
                             <img
                                 src={this.props.image}
@@ -16,7 +16,6 @@ class PhotographyProjectPreviewBox extends Component {
                                 className="card-image-preview"
                             />
                         </div>
-                        <div className="card-title">{this.props.name}</div>
                     </div>
                 </Link>
             </div>

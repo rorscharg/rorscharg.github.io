@@ -1,127 +1,133 @@
 .header {
-  width: 100%;
-  background-color: black;
-  overflow: hidden;
-  margin-bottom: 3vh;
-
-  .header-content-desktop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    color: white;
     width: 100%;
-    margin: auto;
-    height: 12vh;
-
-    .title {
-      font-size: 2rem;
-      text-align: center;
-      padding-top: 1vh;
-    }
-
-    .left-desktop {
-      margin-left: 1vw;
-    }
-
-    .right-desktop {
-      margin-right: 1vw;
-    }
-  }
-
-  .header-content-mobile {
-    display: flex;
-    height: 12vh;
-    margin-bottom: 1vh;
-    color: white;
-    align-items: center;
-
-    .left-mobile {
-      width: 50%;
-      font-size: 2rem;
-      text-align: left;
-    }
-
-    .right-mobile {
-      width: 50%;
-      text-align: right;
-    }
-
-    .title-mobile {
-      display: inline-block;
-      margin-left: 3vh;
-    }
-
-    .right-content {
-      display: inline-block;
-      margin-right: 3vh;
-      font-size: 3rem;
-      cursor: pointer;
-    }
-  }
-
-  .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    right: 0;
-    top: 0;
-    background-color: rgb(0, 0, 0); /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide
-     down the overlay (height or width, depending on reveal) */
-    .overlay-content {
-      position: relative;
-      top: 25%;
-      width: 100%;
-      text-align: center;
-      margin-top: 30px;
-    }
-    /* The navigation links inside the overlay */
+    background-color: black;
+    overflow: hidden;
+    margin-bottom: 3vh;
     a {
-      padding: 8px;
-      text-decoration: none;
-      font-size: 36px;
-      color: #818181;
-      display: block; /* Display block instead of inline */
-      transition: 0.3s; /* Transition effects on hover (color) */
+        color: rgba(255, 255, 255, 0.822);
+        transition: 0.3s;
+        /* Transition effects on hover (color) */
     }
-
-    /* When you mouse over the navigation links, change their color */
+    /* visited link */
+    a:visited {
+        color: rgba(255, 255, 255, 0.822);
+    }
+    /* mouse over link */
     a:hover {
-      color: #f1f1f1;
+        color: white;
+        transition: background 0.2s ease, color 0.2s ease;
     }
-    a:focus {
-      color: #f1f1f1;
+    /* selected link */
+    a:active {
+        color: white;
     }
-
-    /* Position the close button (top right corner) */
-    .closebtn {
-      position: absolute;
-      top: 20px;
-      right: 45px;
-      font-size: 60px;
+    .header-content-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        width: 100%;
+        margin: auto;
+        height: 12vh;
+        .title {
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 1vh;
+        }
+        .left-desktop {
+            margin-left: 1vw;
+        }
+        .right-desktop {
+            margin-right: 1vw;
+        }
     }
-  }
+    .header-content-mobile {
+        display: flex;
+        height: 12vh;
+        margin-bottom: 1vh;
+        color: white;
+        align-items: center;
+        .left-mobile {
+            width: 50%;
+            font-size: 2rem;
+            text-align: left;
+        }
+        .right-mobile {
+            width: 50%;
+            text-align: right;
+        }
+        .title-mobile {
+            display: inline-block;
+            margin-left: 3vh;
+        }
+        .right-content {
+            display: inline-block;
+            margin-right: 3vh;
+            font-size: 3rem;
+            cursor: pointer;
+        }
+    }
+    .overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */
+        height: 100%;
+        width: 0;
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        right: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        /* Black fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/opacity */
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in or slide
+     down the overlay (height or width, depending on reveal) */
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        /* The navigation links inside the overlay */
+        a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            display: block;
+            /* Display block instead of inline */
+        }
+        /* mouse over link */
+        a:hover {
+            text-decoration: none;
+        }
+        /* Position the close button (top right corner) */
+        .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+    }
 }
 
 .menu-item-container {
-  display: inline-block;
-  margin-left: 1vw;
-  font-size: 1.5rem;
+    display: inline-block;
+    margin-left: 1vw;
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 1025px) {
-  h1 {
-    margin: 0;
-  }
-
-  .title {
-    font-size: 8vh;
-    text-align: center;
-    padding-top: 1vh;
-  }
+    h1 {
+        margin: 0;
+    }
+    .title {
+        font-size: 8vh;
+        text-align: center;
+        padding-top: 1vh;
+    }
 }

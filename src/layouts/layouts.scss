@@ -10,20 +10,18 @@ a {
 
 /* visited link */
 a:visited {
-  color: white;
   color: #808080;
 }
 
 /* mouse over link */
 a:hover {
-  color: white;
-  text-decoration: none;
+  color: black;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 /* selected link */
 a:active {
-  color: white;
+  color: black;
 }
 
 ul {

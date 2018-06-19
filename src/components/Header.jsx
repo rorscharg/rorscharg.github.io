@@ -47,7 +47,7 @@ class Header extends Component {
                         <br />
                         <MenuItem name="Projects" link="/projects" />
                         <br />
-                        <MenuItem name="Blog" link="/blog" />
+                        <MenuItem name="Thoughts" link="/blog" />
                         <br />
                         <MenuItem name="About" link="/about" />
                     </div>{' '}
@@ -70,7 +70,7 @@ class Header extends Component {
                         <h1>RORSCHARG</h1>
                     </div>
                     <div className="right-desktop menu-item">
-                        <MenuItem name="Blog" link="/blog" />
+                        <MenuItem name="Thoughts" link="/blog" />
                         <MenuItem name="About" link="/about" />
                     </div>{' '}
                 </div>

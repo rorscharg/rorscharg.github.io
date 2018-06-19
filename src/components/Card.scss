@@ -40,7 +40,9 @@
 }
 
 .card-image-preview {
-    width: 46.35vw;
+    margin-left: 50%;
+    margin-bottom: 30%;
+    transform: translate(-50%, -30%);
 }
 
 .card-title {
@@ -63,7 +65,8 @@
 @media only screen and (max-width: 1766px) {
     .card-image-preview {
         height: auto;
-        width: 100vw;
+        width: auto;
+        max-width: 1000px; 
     }
 
     .card-container {
