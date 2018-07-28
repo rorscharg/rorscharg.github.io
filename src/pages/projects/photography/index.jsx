@@ -14,18 +14,18 @@ class BlogIndex extends React.Component {
       <div>
         <Header />
         <Card
-          name="Beauce, Summer 2018"
-          link="/projects/photography/2018_summer_beauce"
-          image="2018_summer_beauce/actuallypretty.jpeg"
-          alt="2018_summer_beauce/actuallypretty.jpeg"
+          name="Montreal, Summer 2018"
+          link="/projects/photography/2018_summer_montreal"
+          image="2018_summer_montreal/trapped.jpg"
+          alt="2018_summer_montreal/trapped.jpg"
         >
           {' '}
         </Card>
         <Card
-          name="Montreal, Summer 2018"
-          link="/projects/photography/2018_summer_montreal"
-          image="2018_summer_montreal/calm.jpeg"
-          alt="2018_summer_montreal/calm.jpeg"
+          name="Beauce, Summer 2018"
+          link="/projects/photography/2018_summer_beauce"
+          image="2018_summer_beauce/actuallypretty.jpeg"
+          alt="2018_summer_beauce/actuallypretty.jpeg"
         >
           {' '}
         </Card>

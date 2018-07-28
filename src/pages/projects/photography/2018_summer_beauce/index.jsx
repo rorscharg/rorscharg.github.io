@@ -11,8 +11,6 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
     const images = [
       '2018_summer_beauce/actuallypretty.jpeg',
-      '2018_summer_beauce/flareoverload.jpeg',
-      '2018_summer_beauce/overedited.jpeg',
       '2018_summer_beauce/rock.jpeg',
       '2018_summer_beauce/far.jpeg',
     ]

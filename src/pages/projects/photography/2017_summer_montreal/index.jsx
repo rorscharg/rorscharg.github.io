@@ -18,8 +18,8 @@ class BlogIndex extends React.Component {
       '2017_summer_montreal/reading.jpg',
       '2017_summer_montreal/skate.jpg',
       '2017_summer_montreal/smoke.jpg',
+      '2017_summer_montreal/gees.jpg',
       '2017_summer_montreal/watchmen.jpg',
-      '2017_summer_montreal/waw.jpg',
       '2017_summer_montreal/whoami.jpg',
     ]
 
