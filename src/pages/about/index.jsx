@@ -21,12 +21,14 @@ class BlogIndex extends React.Component {
               If you fumble on this about 'section', the only thing you really
               need to know is I fall under the 'raised by the internet'
               archetype. If some stereotype comes up in your head right now,
-              they probably apply to me
+              they probably apply to me.
             </p>
             <h2>Current Interests:</h2>
             Dogs
             <br />
             Programming
+            <br />
+            Photography
             <br />
             Music
             <br />
@@ -35,6 +37,11 @@ class BlogIndex extends React.Component {
             Being a Riven main
             <br />
             Happiness
+            <br />
+            <br />
+            <p>
+              If you want to contact me, feel free to send me an email at <a href="mailto:rorscharg@gmail.com">rorscharg@gmail.com</a> and I'll be super happy to answer or have a conversation with you!
+            </p>
           </div>
         </div>
       </div>
