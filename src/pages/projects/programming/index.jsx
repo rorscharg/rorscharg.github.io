@@ -1,22 +1,28 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
 import Header from '../../../components/Header'
-import Card from '../../../components/ProgrammingCard'
+import HackathonCard from '../../../components/HackathonCard'
+import NonHackathonCard from '../../../components/NonHackathonCard'
 import './index.css'
 import Github from 'react-icons/lib/go/mark-github';
 
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
-
     return (
       <div>
         <Header />
-        <Card
+        <NonHackathonCard
+          name="Simple Scoreboard"
+          description={"A simple two teams scoreboard made in pure javascript"}
+          date="2018-04-20"
+          link="https://rorscharg.com/simplescoreboard"
+          image="simplescoreboard.jpg"
+          alt="simplescoreboard.jpg"
+          stack="Pure Javascript"
+        >
+          {' '}
+        </NonHackathonCard>
+        <HackathonCard
           name="The Salad Bowl"
           description={"Made during ConuHack III, The Salad Bowl is a news aggregator that shows to the user the most relevant news on a specific subject"}
           date="2018-01-28"
@@ -26,8 +32,8 @@ class BlogIndex extends React.Component {
           stack="JS, React, Node"
         >
           {' '}
-        </Card>
-        <Card
+        </HackathonCard>
+        <HackathonCard
           name="Troc"
           description="Made during Hackatown 2018, Troc connects people by allowing them to lend, borrow or trade items from each other."
           date="2018-01-20"
@@ -37,7 +43,7 @@ class BlogIndex extends React.Component {
           stack="JS, Node"
         >
           {' '}
-        </Card>
+        </HackathonCard>
         <div className="footer">
           <a className="external-links" href="https://github.com/rorscharg">
             <Github />

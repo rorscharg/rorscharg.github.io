@@ -21,7 +21,8 @@ class BlogIndex extends React.Component {
               If you fumble on this about 'section', the only thing you really
               need to know is I fall under the 'raised by the internet'
               archetype. If some stereotype comes up in your head right now,
-              they probably apply to me.
+              they probably apply to me. Living that "spent too much time on
+	      the internet, now want to see the world" life.
             </p>
             <h2>Current Interests:</h2>
             Dogs
