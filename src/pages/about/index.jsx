@@ -1,43 +1,41 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
 import Header from '../../components/Header'
+import Layout from '../../components/Layout'
 import './about.scss'
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
-
     return (
-      <div>
-        <Header />
-        <div className="about-container">
-          <div className="about-content">
-            <h1>Warning:</h1>
-            <p>
-              {' '}
-              If you fumble on this about 'section', the only thing you really
-              need to know is I fall under the 'raised by the internet'
-              archetype. If some stereotype comes up in your head right now,
-              they probably apply to me
+      <Layout>
+        <div>
+          <Header />
+          <div className="about-container">
+            <div className="about-content">
+              <h1>Warning:</h1>
+              <p>
+                {' '}
+                If you fumble on this about 'section', the only thing you really
+                need to know is I fall under the 'raised by the internet'
+                archetype. If some stereotype comes up in your head right now,
+                they probably apply to me. I'm currently living that "spent
+                too much time on the internet now wants to see the world" life.
             </p>
-            <h2>Current Interests:</h2>
-            Dogs
+              <h2>Current Interests:</h2>
+              Dogs
             <br />
-            Programming
+              Programming
             <br />
-            Music
+              Music
             <br />
-            Video Games
+              Video Games
             <br />
-            Being a Riven main
+              Being a Riven main
             <br />
-            Happiness
+              Happiness
+          </div>
           </div>
         </div>
-      </div>
+      </Layout>
     )
   }
 }
