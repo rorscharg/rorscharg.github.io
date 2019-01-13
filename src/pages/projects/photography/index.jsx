@@ -14,6 +14,14 @@ class BlogIndex extends React.Component {
       <div>
         <Header />
         <Card
+          name="Montreal, Fall 2018"
+          link="/projects/photography/2018_fall_montreal"
+          image="2018_fall_montreal/lady2.jpg"
+          alt="2018_fall_montreal/lady2.jpg"
+        >
+          {' '}
+        </Card>
+        <Card
           name="Travel, Summer 2018"
           link="/projects/photography/2018_summer_travel"
           image="2018_summer_travel/mapleleaf.jpg"
