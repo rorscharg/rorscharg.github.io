@@ -1,5 +1,5 @@
 .post-container {
-  height: 100vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-color: black;
@@ -12,6 +12,20 @@
   margin-top: 5vh;
   padding-left: 1vw;
   padding-right: 1vw;
+
+  a {
+    color: rgb(49, 48, 48);
+    transition: 0.3s;
+     /* Transition effects on hover (color) */
+    }
+  /* visited link */
+  a:visited {
+    color: rgb(49, 48, 48);
+  }
+
+  a:hover {
+    color: rgb(133, 130, 130);
+  }
 }
 
 @media screen and (max-width: 1400px) {

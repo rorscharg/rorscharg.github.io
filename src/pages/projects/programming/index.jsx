@@ -12,6 +12,28 @@ class BlogIndex extends React.Component {
       <div>
         <Header />
         <NonHackathonCard
+          name="Brainy Dump"
+          description={"Brainy Dump is/was a note taking app that allows the user to easily keep a journal on different topics"}
+          date="2019-02-19"
+          link="http://brainydump.com"
+          image="brainydump.jpg"
+          alt="brainydump.jpg"
+          stack="Elixir, VueJS, Phoenix, Postgres, Auth0, DO"
+        >
+          {' '}
+        </NonHackathonCard>
+        <NonHackathonCard
+          name="Desert Toy Train ThreeJS"
+          description={"An animation of a train rolling on tracks made using ThreeJS"}
+          date="2019-02-19"
+          link="https://rorscharg.com/desert-train-threejs"
+          image="desert_train.jpg"
+          alt="deserttrain.jpg"
+          stack="ThreeJS"
+        >
+          {' '}
+        </NonHackathonCard>
+        <NonHackathonCard
           name="Simple Scoreboard"
           description={"A simple two teams scoreboard made in pure javascript"}
           date="2018-04-20"

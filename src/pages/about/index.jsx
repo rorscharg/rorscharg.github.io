@@ -31,13 +31,15 @@ class BlogIndex extends React.Component {
             <br />
             Photography
             <br />
-            Music
+            Computer Graphics
             <br />
-            Video Games
+            Jogging
             <br />
-            Being a Riven main
+            Being a Pathfinder and Mirage main
             <br />
-            Happiness
+            Writing to clear my mind
+            <br />
+            Happiness/Philosophy
             <br />
             <br />
             <p>
