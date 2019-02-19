@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{346:function(e,t){e.exports={data:{site:{siteMetadata:{title:"RORSCHARG"}},allMarkdownRemark:{edges:[{node:{excerpt:"I really wish things would go faster, I want to be motivated, to have a purpose, to end life in exhaustion because I’ve lived too much…",fields:{slug:"/blog/fall/"},frontmatter:{title:"Fall",date:"05 May, 2018"}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-98f152700c1bbd9fa7c2.js.map
