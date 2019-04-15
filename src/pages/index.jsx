@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 class BlogIndex extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class BlogIndex extends React.Component {
           style={imageStyle}
           alt="back_turned.jpg"
         />
+        <Footer />
       </div>
     )
   }

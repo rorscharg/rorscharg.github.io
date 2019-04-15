@@ -1,9 +1,9 @@
-import React from 'react'
-import Header from '../../../components/Header'
-import HackathonCard from '../../../components/HackathonCard'
-import NonHackathonCard from '../../../components/NonHackathonCard'
-import './index.css'
-import Github from 'react-icons/lib/go/mark-github';
+import React from 'react';
+import Header from '../../../components/Header';
+import HackathonCard from '../../../components/HackathonCard';
+import NonHackathonCard from '../../../components/NonHackathonCard';
+import Footer from '../../../components/Footer';
+import './index.css';
 
 
 class BlogIndex extends React.Component {
@@ -66,12 +66,8 @@ class BlogIndex extends React.Component {
         >
           {' '}
         </HackathonCard>
-        <div className="footer">
-          <a className="external-links" href="https://github.com/rorscharg">
-            <Github />
-          </a>
-          <br/>
-          <br/>
+        <Footer />
+        <div className="footerafter">
           Project section inspired by <a href="https://huangxuan.me/">Hux's</a> website portfolio section
         </div>
       </div>

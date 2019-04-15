@@ -1,5 +1,6 @@
 .about-container {
   overflow: auto;
+  min-height: 100vh;
 }
 
 .about-content {
@@ -7,6 +8,7 @@
   width: 40%;
   padding-left: 1vw;
   padding-right: 1vw;
+  padding-bottom: 2.5rem;    /* Footer height */
 }
 
 @media screen and (max-width: 1400px) {
