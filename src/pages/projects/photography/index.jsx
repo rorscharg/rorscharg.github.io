@@ -1,18 +1,19 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Header from '../../../components/Header'
 import Card from '../../../components/Card'
+import './photography.scss';
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
-
     return (
-      <div>
-        <Header />
+      <div className="photography-page-container">
+        <Card
+          name="Montreal, Winter 2019"
+          link="/projects/photography/2019_winter_montreal"
+          image="2019_winter_montreal/inception.jpg"
+          alt="2019_winter_montreal/highlights_1000.jpg"
+        >
+          {' '}
+        </Card>
         <Card
           name="Montreal, Fall 2018"
           link="/projects/photography/2018_fall_montreal"

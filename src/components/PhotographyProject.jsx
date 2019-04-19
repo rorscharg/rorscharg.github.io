@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import './PhotographyProject.scss';
 
 class PhotographyProject extends Component {
     render() {
         return (
-            <div className="App">
+            <div className="photography-album-container">
                 <Images images={this.props.images} />
             </div>
         )

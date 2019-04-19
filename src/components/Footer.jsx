@@ -9,15 +9,19 @@ class Footer extends Component {
     render() {
         return (
             <footer className="footer">
-                <a className="external-links" href="https://instagram.com/rorscharg">
-                    <Instagram />
-                </a>
-                <a className="external-links" href="https://github.com/rorscharg">
-                    <Github />
-                </a>
-                <a className="external-links" href="https://twitter.com/rorscharg">
-                    <Twitter />
-                </a>
+                <div></div>
+                <div>
+                    <a className="external-links" href="https://instagram.com/rorscharg">
+                        <Instagram className="icon-style"/>
+                    </a>
+                    <a className="external-links" href="https://github.com/rorscharg">
+                        <Github className="icon-style"/>
+                    </a>
+                    <a className="external-links" href="https://twitter.com/rorscharg">
+                        <Twitter className="icon-style" />
+                    </a>
+                    </div>
+                 <div></div>
             </footer>
         )
     }

@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Header from '../../components/Header'
 import './blog-index.scss'
 
 class BlogIndex extends React.Component {
@@ -11,7 +9,6 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-        <Header />
         <div className="index-content">
           {posts.map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug

@@ -28,7 +28,7 @@ class Header extends Component {
     toggle() {
         this.setState({
             isOpen: !this.state.isOpen,
-        })
+        });
     }
 
     renderFullscreenMenu() {
@@ -43,7 +43,7 @@ class Header extends Component {
                         &times;
                     </a>
                     <div className="overlay-content">
-                        <MenuItem name="Home" link="/" />
+                        <MenuItem name="Home" link="/" onClick={this.state.isOpen = false}/>
                         <br />
                         <MenuItem name="Projects" link="/projects" />
                         <br />
@@ -61,25 +61,32 @@ class Header extends Component {
     renderNavigation() {
         if (this.state.windowWidth >= 1025) {
             return (
-                <div className="header-content-desktop">
-                    <div className="left-desktop menu-item">
-                        <MenuItem name="Home" link="/" />
-                        <MenuItem name="Projects" link="/projects" />
+                <div className="header-container-desktop">
+                    <div></div>
+                    <div className="header-content-desktop">
+                        <div className="left-desktop menu-item">
+                            <MenuItem name="Home" link="/" />
+                            <MenuItem name="Projects" link="/projects" />
+                        </div>
+                        <div className="title">
+                        <Link to="/" className="website-title">
+                            <h1>RORSCHARG</h1>
+                        </Link>
+                        </div>
+                        <div className="right-desktop menu-item">
+                            <MenuItem name="Thoughts" link="/blog" />
+                            <MenuItem name="About" link="/about" />
+                        </div>{' '}
                     </div>
-                    <div className="title">
-                        <h1>RORSCHARG</h1>
-                    </div>
-                    <div className="right-desktop menu-item">
-                        <MenuItem name="Thoughts" link="/blog" />
-                        <MenuItem name="About" link="/about" />
-                    </div>{' '}
                 </div>
             )
         } else {
             return (
                 <div className="header-content-mobile">
                     <div className="title-mobile left-mobile">
-                        <b>RORSCHARG</b>
+                        <Link to="/" className="website-title">
+                            <h1>RORSCHARG</h1>
+                        </Link>
                     </div>
                     <div className="right-mobile">
                         <div

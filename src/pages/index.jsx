@@ -1,33 +1,65 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import SmallCard from '../components/SmallCard'
+import './index.scss';
 
-class BlogIndex extends React.Component {
+class WebsiteHome extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const node = posts[0].node;
+    const title = get(node, 'frontmatter.title') || node.fields.slug
 
     return (
-      <div>
-        <Header />
-        <img
-          src="/projects/photography/2017_fall_montreal/back_turned.jpg"
-          style={imageStyle}
-          alt="back_turned.jpg"
-        />
-        <Footer />
+      <div className="home-container">
+        <div className="home-content">
+          <h1>Last Post:</h1>
+          <div key={node.fields.slug}>
+            <h3>
+              <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                {title}
+              </Link>
+            </h3>
+            <small>{node.frontmatter.date}</small>
+            <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+          </div>
+          <h1>Last Photography Project:</h1>
+          <div className="latest-photography-card">
+            <SmallCard
+              name="Montreal, Winter 2019"
+              link="/projects/photography/2019_winter_montreal"
+              image="projects/photography/2019_winter_montreal/inception.jpg"
+              alt="projects/photography/2019_winter_montreal/highlights_1000.jpg"
+              className="latest-photography-card"
+            >
+              {' '}
+            </SmallCard>
+          </div>
+        </div>
       </div>
     )
   }
 }
 
-const imageStyle = {
-  display: 'block',
-  margin: 'auto',
-  maxWidth: '80vw',
-  maxHeight: '100vh',
-}
-export default BlogIndex
+export default WebsiteHome
+
+export const pageQuery = graphql`
+  query HomeQuery {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+        }
+      }
+    }
+  }
+`
+

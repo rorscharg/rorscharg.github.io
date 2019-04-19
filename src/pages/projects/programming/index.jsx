@@ -1,16 +1,13 @@
 import React from 'react';
-import Header from '../../../components/Header';
 import HackathonCard from '../../../components/HackathonCard';
 import NonHackathonCard from '../../../components/NonHackathonCard';
-import Footer from '../../../components/Footer';
-import './index.css';
+import './index.scss';
 
 
 class BlogIndex extends React.Component {
   render() {
     return (
-      <div>
-        <Header />
+      <div className="programming-projects-index-container">
         <NonHackathonCard
           name="Brainy Dump"
           description={"Brainy Dump is/was a note taking app that allows the user to easily keep a journal on different topics"}
@@ -66,7 +63,6 @@ class BlogIndex extends React.Component {
         >
           {' '}
         </HackathonCard>
-        <Footer />
         <div className="footerafter">
           Project section inspired by <a href="https://huangxuan.me/">Hux's</a> website portfolio section
         </div>

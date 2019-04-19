@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
-import Header from '../components/Header'
 import './blog-post.scss'
 
 class BlogPostTemplate extends React.Component {
@@ -11,7 +10,6 @@ class BlogPostTemplate extends React.Component {
     const image = post.frontmatter.image.childImageSharp.responsiveSizes.src
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next } = this.props.pathContext
-    console.log(post)
 
     return (
       <div
@@ -20,9 +18,8 @@ class BlogPostTemplate extends React.Component {
           backgroundImage: `url(${image})`,
         }}
       >
-        <Header />
+        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <div className="post-content">
-          <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
           <h1>{post.frontmatter.title}</h1>
           <p
             style={{

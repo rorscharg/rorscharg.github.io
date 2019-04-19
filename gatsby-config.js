@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'RORSCHARG',
-    author: 'Rorscharg',
-    description: `Rorscharg's personal webiste!!! Hooray!`,
+    author: 'rorscharg',
+    description: `rorscharg's personal webiste!!! Hooray!`,
     siteUrl: 'http://rorscharg.com',
   },
   plugins: [
