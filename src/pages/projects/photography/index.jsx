@@ -7,6 +7,22 @@ class BlogIndex extends React.Component {
     return (
       <div className="photography-page-container">
         <Card
+          name="Montreal, Summer 2019"
+          link="/projects/photography/2019_summer_montreal"
+          image="2019_summer_montreal/grad.jpg"
+          alt="2019_summer_montreal/grad.jpg"
+        >
+          {' '}
+        </Card>
+        <Card
+          name="Montreal, Spring 2019"
+          link="/projects/photography/2019_spring_montreal"
+          image="2019_spring_montreal/night5.jpg"
+          alt="2019_spring_montreal/night5.jpg"
+        >
+          {' '}
+        </Card>
+        <Card
           name="Montreal, Winter 2019"
           link="/projects/photography/2019_winter_montreal"
           image="2019_winter_montreal/inception.jpg"
