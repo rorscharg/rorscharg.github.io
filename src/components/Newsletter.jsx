@@ -15,29 +15,34 @@ const CustomForm = ({ status, message, onValidated }) => {
 
   return (
     <div className="newsletter-container">
-      <input
-        style={{ fontSize: "2em", padding: 5 }}
-        ref={node => (email = node)}
-        type="email"
-        placeholder="Your email"
-      />
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-      {status === "error" && (
-        <div
-          style={{ color: "red" }}
-          dangerouslySetInnerHTML={{ __html: message }}
+      <h1 className="newsletter-title">Subscribe to my newsletter</h1>
+      <div className="newsletter-input">
+        <input className="newsletter-email-input"
+          ref={node => (email = node)}
+          type="email"
+          placeholder="Email"
         />
-      )}
-      {status === "success" && (
-        <div
-          style={{ color: "green" }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
-      <br />
-      <button style={{ fontSize: "2em", padding: 5 }} onClick={submit}>
-        Submit
-      </button>
+        <button className="newsletter-button" style={{ fontSize: "2em", padding: 5 }} onClick={submit}>
+          Submit
+        </button>
+      </div>
+      <div className="newsletter-error-container">
+        {status === "sending" && <div className="newsletter-error-message" style={{ color: "blue" }}>sending...</div>}
+        {status === "error" && (
+          <div
+            className="newsletter-error-message"
+            style={{ color: "red" }}
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
+        {status === "success" && (
+          <div
+            className="newsletter-error-message"
+            style={{ color: "green" }}
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        )}
+      </div>
     </div>
   );
 };
@@ -55,7 +60,6 @@ class Newsletter extends Component {
           />
         )}
       />
-
     )
   }
 }
