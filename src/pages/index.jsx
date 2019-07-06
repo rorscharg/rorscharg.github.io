@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import SmallCard from '../components/SmallCard'
 import Layout from '../components/layout'
+import Newsletter from '../components/Newsletter'
 import './index.scss'
 
 class WebsiteHome extends React.Component {
@@ -38,6 +39,7 @@ class WebsiteHome extends React.Component {
                 {' '}
               </SmallCard>
             </div>
+            <Newsletter />
           </div>
         </div>
       </Layout>

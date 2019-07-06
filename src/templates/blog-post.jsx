@@ -8,7 +8,7 @@ import './blog-post.scss'
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const image = post.frontmatter.image.childImageSharp.responsiveSizes.src
+    const image = post.frontmatter.image.childImageSharp.fluid.src
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next } = this.props.pathContext
 
