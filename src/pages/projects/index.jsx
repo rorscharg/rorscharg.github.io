@@ -1,7 +1,8 @@
 import React from 'react'
 import get from 'lodash/get'
 import Card from '../../components/Card'
-import './Projects.scss';
+import Layout from '../../components/layout'
+import './Projects.scss'
 
 class BlogIndex extends React.Component {
   render() {
@@ -9,24 +10,26 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div className="projects-container">
-        <Card
-          name="Photography"
-          link="/projects/photography/"
-          image="projects/photography/2017_fall_montreal/sipping.jpg"
-          alt="2017_fall_montreal/sipping.jpg"
-        >
-          {' '}
-        </Card>
-        <Card
-          name="Programming"
-          link="/projects/programming/"
-          image="projects/programming.png"
-          alt="programming.jpg"
-        >
-          {' '}
-        </Card>
-      </div>
+      <Layout>
+        <div className="projects-container">
+          <Card
+            name="Photography"
+            link="/projects/photography/"
+            image="projects/photography/2017_fall_montreal/sipping.jpg"
+            alt="2017_fall_montreal/sipping.jpg"
+          >
+            {' '}
+          </Card>
+          <Card
+            name="Programming"
+            link="/projects/programming/"
+            image="projects/programming.png"
+            alt="programming.jpg"
+          >
+            {' '}
+          </Card>
+        </div>
+      </Layout>
     )
   }
 }

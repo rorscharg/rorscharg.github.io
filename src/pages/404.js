@@ -1,13 +1,16 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import './404.scss';
+import { Link } from 'gatsby'
+import Layout from '../components/layout'
+import './404.scss'
 
 const NotFoundPage = () => (
-  <div className="not-found-container">
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist!</p>
-    <Link to="/">Back to rorscharg.com</Link>
-  </div>
+  <Layout>
+    <div className="not-found-container">
+      <h1>NOT FOUND</h1>
+      <p>You just hit a route that doesn&#39;t exist!</p>
+      <Link to="/">Back to rorscharg.com</Link>
+    </div>
+  </Layout>
 )
 
 export default NotFoundPage

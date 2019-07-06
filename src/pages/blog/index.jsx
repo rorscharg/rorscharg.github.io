@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
+import Layout from '../../components/layout'
 import './blog-index.scss'
 
 class BlogIndex extends React.Component {
@@ -8,24 +9,26 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
-        <div className="index-content">
-          {posts.map(({ node }) => {
-            const title = get(node, 'frontmatter.title') || node.fields.slug
-            return (
-              <div key={node.fields.slug}>
-                <h3>
-                  <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              </div>
-            )
-          })}
+      <Layout>
+        <div>
+          <div className="index-content">
+            {posts.map(({ node }) => {
+              const title = get(node, 'frontmatter.title') || node.fields.slug
+              return (
+                <div key={node.fields.slug}>
+                  <h3>
+                    <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                      {title}
+                    </Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                  <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                </div>
+              )
+            })}
+          </div>
         </div>
-      </div>
+      </Layout>
     )
   }
 }

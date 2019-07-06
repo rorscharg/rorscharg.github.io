@@ -3,7 +3,7 @@ module.exports = {
     title: 'RORSCHARG',
     author: 'rorscharg',
     description: `rorscharg's personal webiste!!! Hooray!`,
-    siteUrl: 'http://rorscharg.com',
+    siteUrl: 'https://rorscharg.com',
   },
   plugins: [
       {

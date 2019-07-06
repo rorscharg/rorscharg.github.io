@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import { Link, graphql } from 'gatsby'
+import Layout from '../components/layout'
 import get from 'lodash/get'
 import './blog-post.scss'
 
@@ -12,52 +13,54 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pathContext
 
     return (
-      <div
-        className="post-container"
-        style={{
-          backgroundImage: `url(${image})`,
-        }}
-      >
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <div className="post-content">
-          <h1>{post.frontmatter.title}</h1>
-          <p
-            style={{
-              display: 'block',
-            }}
-          >
-            {post.frontmatter.date}
-          </p>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr />
+      <Layout>
+        <div
+          className="post-container"
+          style={{
+            backgroundImage: `url(${image})`,
+          }}
+        >
+          <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+          <div className="post-content">
+            <h1>{post.frontmatter.title}</h1>
+            <p
+              style={{
+                display: 'block',
+              }}
+            >
+              {post.frontmatter.date}
+            </p>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <hr />
 
-          <ul
-            style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              justifyContent: 'space-between',
-              listStyle: 'none',
-              padding: 0,
-            }}
-          >
-            {previous && (
-              <li>
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
-              </li>
-            )}
+            <ul
+              style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'space-between',
+                listStyle: 'none',
+                padding: 0,
+              }}
+            >
+              {previous && (
+                <li>
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                </li>
+              )}
 
-            {next && (
-              <li>
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              </li>
-            )}
-          </ul>
+              {next && (
+                <li>
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                </li>
+              )}
+            </ul>
+          </div>
         </div>
-      </div>
+      </Layout>
     )
   }
 }
@@ -65,7 +68,7 @@ class BlogPostTemplate extends React.Component {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query($slug: String!) {
     site {
       siteMetadata {
         title
@@ -80,7 +83,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         image {
           childImageSharp {
-            responsiveSizes(maxWidth: 2000) {
+            fluid(maxWidth: 2000) {
               src
               srcSet
               sizes
