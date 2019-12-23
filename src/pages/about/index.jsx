@@ -17,26 +17,16 @@ class BlogIndex extends React.Component {
               archetype. If some stereotype comes up in your head right now, they
             probably apply to me. Currently living that{' '}
               <i>
-                spent too much time on the internet, now want to see the world
+                spent too much time on the internet, now wants to see the world
             </i>{' '}
               life.
           </p>
             <h2>Current Interests:</h2>
-            Dogs
-          <br />
             Programming
           <br />
             Photography
           <br />
-            Computer Graphics
-          <br />
-            Jogging
-          <br />
-            Being a Pathfinder and Mirage main
-          <br />
-            Writing to clear my mind
-          <br />
-            Happiness/Philosophy
+            Reading the classics
           <br />
             <br />
             <p>

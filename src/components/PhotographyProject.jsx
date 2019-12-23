@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
+import Layout from './layout'
 import './PhotographyProject.scss'
 
 class PhotographyProject extends Component {
   render() {
     return (
-      <div className="photography-album-container">
-        <Images images={this.props.images} />
-      </div>
+      <Layout>
+        <div className="photography-album-container">
+          <Images images={this.props.images} />
+        </div>
+      </Layout>
     )
   }
 }
@@ -14,7 +17,7 @@ class PhotographyProject extends Component {
 function Images(props) {
   return (
     <div>
-      {props.images.map(function(image) {
+      {props.images.map(function (image) {
         return (
           <div key={image}>
             <img src={image} style={imageStyle} alt={image} />

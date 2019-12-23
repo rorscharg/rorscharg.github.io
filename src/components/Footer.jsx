@@ -9,7 +9,7 @@ class Footer extends Component {
       <footer className="footer">
         <div></div>
         <div>
-          <a className="external-links" href="https://instagram.com/rorscharg">
+          <a className="external-links" href="https://instagram.com/jean.arjean">
             <FaInstagram className="icon-style" />
           </a>
           <a className="external-links" href="https://github.com/rorscharg">

@@ -64,4 +64,4 @@ create a KANBAN board on Trello(or github projects) that specifies what the next
 
 Good luck, and don't forget to have fun.
 
-Oh and if you ever want to look at what BrainyDump turned into here it is [http://brainydump.com](http://brainydump.com).
+Oh and if you ever want to look at what BrainyDump turned into, here it is [https://github.com/rorscharg/brainy_dump](https://github.com/rorscharg/brainy_dump).
