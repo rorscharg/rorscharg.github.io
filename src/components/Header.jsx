@@ -74,7 +74,8 @@ class Header extends Component {
             </div>
             <div className="title">
               <Link to="/" className="website-title">
-                <h1>RORSCHARG</h1>
+                <h1>jean.arjean</h1>
+                <p>web dev</p>
               </Link>
             </div>
             <div className="right-desktop menu-item">
@@ -89,7 +90,8 @@ class Header extends Component {
         <div className="header-content-mobile">
           <div className="title-mobile left-mobile">
             <Link to="/" className="website-title">
-              <h1>RORSCHARG</h1>
+              <h1>jean.arjean</h1>
+                <p>web dev</p>
             </Link>
           </div>
           <div className="right-mobile">

@@ -9,30 +9,22 @@ class BlogIndex extends React.Component {
       <Layout>
         <div className="about-container">
           <div className="about-content">
-            <h1>Warning:</h1>
+            <h1>About:</h1>
             <p>
               {' '}
-              If you fumble on this about 'section', the only thing you really
-              need to know is that I fall under the 'raised by the internet'
-              archetype. If some stereotype comes up in your head right now, they
-            probably apply to me. Currently living that{' '}
-              <i>
-                spent too much time on the internet, now wants to see the world
-            </i>{' '}
-              life.
-          </p>
+              Passionate about all aspects of programming and video games.
+            {' '}
+            </p>
             <h2>Current Interests:</h2>
             Programming
           <br />
-            Photography
-          <br />
-            Reading the classics
+            Reading
           <br />
             <br />
             <p>
-              If you want to contact me, feel free to send me an email at{' '}
-              <a href="mailto:rorscharg@gmail.com">rorscharg@gmail.com</a> and
-              I'll be super happy to answer or have a conversation with you!
+              If you want to contact me, feel free to send an email at{' '}
+              <a href="mailto:rorscharg@gmail.com">rorscharg@gmail.com</a>.
+              I'll be super happy to answer and have a conversation with you!
           </p>
           </div>
           <Footer />

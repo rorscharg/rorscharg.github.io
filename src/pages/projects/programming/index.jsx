@@ -10,9 +10,21 @@ class BlogIndex extends React.Component {
       <Layout>
         <div className="programming-projects-index-container">
           <NonHackathonCard
+            name="Is it 4PM Yet"
+            description={
+              'No description could do it justice, has to be experienced personally'
+            }
+            date="2020-03-26"
+            link="http://isit4pmyet.com"
+            image="isit4pmyet.jpg"
+            alt="brainydump.jpg"
+            stack="HTML, JS, CSS"
+          >
+          </NonHackathonCard>
+          <NonHackathonCard
             name="Brainy Dump"
             description={
-              'Brainy Dump is/was a note taking app that allows the user to easily keep a journal on different topics'
+              'Brainy Dump was a note taking app that allows the user to easily keep a journal on different topics'
             }
             date="2019-02-19"
             link="http://brainydump.com"
@@ -28,7 +40,7 @@ class BlogIndex extends React.Component {
               'An animation of a train rolling on tracks made using ThreeJS'
             }
             date="2019-02-19"
-            link="https://rorscharg.com/desert-train-threejs"
+            link="https://jeanarjean.com/desert-train-threejs"
             image="desert_train.jpg"
             alt="deserttrain.jpg"
             stack="ThreeJS"
@@ -41,7 +53,7 @@ class BlogIndex extends React.Component {
               'A simple two teams scoreboard made in pure javascript'
             }
             date="2018-04-20"
-            link="https://rorscharg.com/simplescoreboard"
+            link="https://jeanarjean.com/simplescoreboard"
             image="simplescoreboard.jpg"
             alt="simplescoreboard.jpg"
             stack="Pure Javascript"

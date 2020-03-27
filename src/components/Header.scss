@@ -28,6 +28,9 @@
     .header-content-desktop {
       display: flex;
       background-color: black;
+      background-image: url("/wolfpackwoofwoof.jpg");
+      background-size: 40vw auto;
+      background-position: 0px -220px;
       justify-content: space-between;
       align-items: center;
       color: white;
@@ -39,7 +42,7 @@
         width: 60%;
       }
       .title {
-        font-size: 2rem;
+        font-size: 1rem;
         text-align: center;
         padding-top: 1vh;
       }
@@ -59,6 +62,9 @@
     background-color: black;
     height: 12vh;
     margin-bottom: 1vh;
+    background-image: url("/wolfpackwoofwoof.jpg");
+    background-size: 100vw auto;
+    background-position: 0px -300px;
     color: white;
     align-items: center;
     .left-mobile {
@@ -88,6 +94,15 @@
     color: white;
     a:visited {
       color: white;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    p {
+      margin: 5px;
+      font-size: 0.9rem;
     }
   }
 
