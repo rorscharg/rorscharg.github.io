@@ -7,7 +7,7 @@ song: 'oogway - two years'
 
 
 There's this innate feeling to some people, probably most people, that they're
-not doing enough, they're not meeting the expectations they have of themselves. 
+not doing enough, they're not meeting their expectations.
 I have this feeling, some people might call this being ambitious.  That's actually probably
 the word I'm looking for. Ambition makes me feel like I can achieve great things, it also makes me feel like
 there's a lot of weight on my shoulders. The crushing weight of all the things I should
@@ -17,26 +17,25 @@ potential, pressure sets in. You have to live up to this potential or
 accept the fact that you won't meet them and be forever disappointed in yourself.
 
 What makes me think I have potential is simple, I have a relatively sharp brain, good health,
-pretty good work habits, and a lot of free time. I spend a lot of time reading or working
+pretty good work habits, a good upbringing and a lot of free time. I spend a lot of time reading or working
 on side projects. I absorb information. I absorb a lot of information, 
 but I don't take the time to share it, I don't
 also take the time to fully *ingest* the information, which means I might absorb
-it but I get no use out of it. I don't take the time enough time to master it.
+it but I get no use out of it. I don't take the time to master it.
 
-I might have this potential, but I don't live up to it, I avoid living up to it, I get interested in many things but I don't focus. I've noticed that while having a few interests is fun and all,
+I might have the potential I think I have, but I don't live up to it, I avoid living up to it, I get interested in many things but I don't focus. I've noticed that while having quite a few interests is very fun,
 it dilludes your ability to be truly great at one of them.
-I've been avoiding focusing too much on anything, *keeping my options* open
-as I call it, but also not living up to any expectations I have of myself. 
+I've been avoiding focusing too much on anything, *keeping my options open*, but also not living up to any expectations I have of myself. 
 Not deciding to focus on any one thing. Today I've decided to take the first
 step, I've decided that my focus would be programming.
 
-On another note, I've also been avoiding sharing the information I absorb because I'm afraid I'm don't master it
-enough to have a conversation about it. I want to make sure to hold myself accountable for what
+On another note, I've also been avoiding sharing the information I absorb because I'm afraid I don't master it
+enough to have a conversation about it. I want to hold myself accountable for what
 I choose to learn, and engage myself to master the information I absorb in order to be able to share it afterwards.
 
 # Focus
 So I've taken the decision to focus on programming for now, or at least for a considerable amount of time, I want
-to focus on one thing at a time (this is an idea I've taken from someone I can't remember exactly). I figured I'll be able to get better at things this way.
+to focus on one thing at a time (this is an idea from Steve Pavlona [^1]). I figured I'll be able to get better at things this way.
 
 ## Strategy
 <!-- ## A LEVER TO MOVE THE WORLD  I LIKE THIS -->
@@ -76,9 +75,13 @@ A good way to mitigate this risk is to make sure I get sufficient rest time even
 time programming outside of work.
 
 
-## Reflections on the strategy
-I don't know if the premise of the book applies well to personal growth, but my current
-methods aren't taking me where I want to be so a new way of doing things could improve things.
+## Reflections on the Strategy
+I don't know if the premise of the mentioned book applies well to personal growth, but my current
+methods aren't taking me where I want to, a change of priority is then in order.
+
+*To move in one direction, you must forgo all others. To choose one goal is to forsake other possible goals.* - Mastery, George Leonard [^3]
 
 
-[^1]: https://www.goodreads.com/book/show/11721966-good-strategy-bad-strategy
+[^1]: https://www.stevepavlina.com/blog/2008/12/rapid-improvement/
+[^2]: https://www.goodreads.com/book/show/11721966-good-strategy-bad-strategy
+[^3]: https://sivers.org/book/Mastery
