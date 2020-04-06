@@ -29,8 +29,9 @@
       display: flex;
       background-color: black;
       background-image: url("/wolfpackwoofwoof.jpg");
+      background-repeat: no-repeat;
       background-size: 40vw auto;
-      background-position: 0px -220px;
+      background-position: 0px -15vh;
       justify-content: space-between;
       align-items: center;
       color: white;
@@ -63,8 +64,9 @@
     height: 12vh;
     margin-bottom: 1vh;
     background-image: url("/wolfpackwoofwoof.jpg");
-    background-size: 100vw auto;
-    background-position: 0px -300px;
+    background-repeat: no-repeat;
+    background-size: auto 100vw;
+    background-position: 0px 0px;
     color: white;
     align-items: center;
     .left-mobile {
@@ -86,6 +88,18 @@
       margin-right: 3vh;
       font-size: 3rem;
       cursor: pointer;
+    }
+  }
+
+  @media screen and (min-width: 200px) {
+    .header-content-mobile {
+      background-position: 0px -10vh;
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .header-content-mobile {
+      background-position: 0px -40vh;
     }
   }
 

@@ -2,6 +2,8 @@
 title: Lessons learned from building yet another note taking app.
 date: '2019-02-19T24:00:00.000Z'
 image: './resources/grues.jpg'
+backgroundColor: 'black'
+tags: ["web development"]
 ---
 
 I started building BrainyDump back in October 2018, I needed a chronological note taking application that allowed me to log entries for

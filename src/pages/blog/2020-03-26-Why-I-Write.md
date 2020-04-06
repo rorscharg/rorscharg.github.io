@@ -3,6 +3,8 @@ title: Why I Write
 date: '2020-03-26T24:00:00.000Z'
 image: './resources/1969-07-16.jpg'
 song: 'oogway - two years'
+backgroundColor: 'black'
+tags: ["life"]
 ---
 
 

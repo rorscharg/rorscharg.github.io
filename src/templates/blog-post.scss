@@ -1,3 +1,7 @@
+.post-title {
+  font-weight: 650;
+}
+
 .post-container {
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -12,10 +16,14 @@
   font-size: 1.05rem;
   font-family: 'Helvetica', monospace;
   text-align: justify;
+  line-height: 1.5rem;
   width: 40%;
   background: rgba(255, 255, 255, 0.97);
-  padding-left: 1vw;
-  padding-right: 1vw;
+  color: rgb(48, 48, 48);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 10px;
+  padding-bottom: 20px;
   a {
     color: rgb(49, 48, 48);
     transition: 0.3s;

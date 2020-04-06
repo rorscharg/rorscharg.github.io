@@ -75,7 +75,7 @@ class Header extends Component {
             <div className="title">
               <Link to="/" className="website-title">
                 <h1>jean.arjean</h1>
-                <p>web dev</p>
+                <p>developer</p>
               </Link>
             </div>
             <div className="right-desktop menu-item">

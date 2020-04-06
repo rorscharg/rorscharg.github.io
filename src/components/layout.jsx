@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { StaticQuery, graphql } from 'gatsby'
 import './layouts.scss'
+import { FaChevronLeft } from 'react-icons/fa'
 
 export default ({ children }) => (
   <StaticQuery
@@ -16,8 +17,15 @@ export default ({ children }) => (
         }
       }
     `}
-    render={data => (
-      <div className="page-container">
+    render={data => {
+      var backgroundColor = 'white';
+      if (children && children.props && children.props.style && children.props.style.backgroundColor) {
+        backgroundColor = children.props.style.backgroundColor;
+      }
+
+      return (<div className="page-container" style={{
+        backgroundColor: `${backgroundColor}`
+      }}>
         <Helmet
           titleTemplate={`%s | ${data.site.siteMetadata.title}`}
           defaultTitle={data.site.siteMetadata.title}
@@ -28,6 +36,7 @@ export default ({ children }) => (
           <Footer />
         </div>
       </div>
-    )}
+      )
+    }}
   />
 )
