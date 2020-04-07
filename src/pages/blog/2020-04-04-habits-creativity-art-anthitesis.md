@@ -1,7 +1,7 @@
 ---
 title: Habits, Creativity and Art
 date: '2020-04-04T24:00:00.000Z'
-image: './resources/yo.jpg'
+image: './resources/nicole-weitzner-NyrfPsJQP3E-unsplash.jpg'
 backgroundColor: 'black'
 tags: ['life']
 ---
@@ -28,12 +28,11 @@ be something I truly belive in, something much greater than a feeling of obligat
 Programming is a creative endeavour, game development probably even more so. Creative endeavours need love,
 they need genuine passion, they're not some fancy daily habits, they're a product of the human genius. Of devoted passion.
 
-It is said in *Atomic Habits* by James Clear that you should develop habits based on your identity.
+It is said in *Atomic Habits* by James Clear[^2] that you should develop habits based on your identity.
 *“With outcome-based habits, the focus is on what you want to achieve. With identity-based habits, the focus is on who you wish to become.”*
 Yet the person I want to become is not someone who is led by mundane imposed one hour a day of side project programming, it's a person who
 programs because he's passionate about the problem, the solution and the product. I'll probably end up programming on side projects every day
 anyway, but in an enjoyable way. 
-
 
 # The Genius of the Subconscious.
 In the book *Steve Jobs* by *Walter Isaacson*[^3], it is said that people working with Steve Jobs always had to make their
@@ -41,5 +40,8 @@ ideas seem like Steve Jobs' in order for him to like them. I suspect humans have
 feels imposed to them, the *imposition* makes them unable to enjoy the moment, all they have in mind is that they're doing something because they need to,
 not because they want to. Daily **Forced** habitts are probably mostly the same.
 
+Photo by [Nicole Weitzner](https://unsplash.com/@nicole_weitzner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/@rorscharg/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
 [^1]: http://jsomers.net/blog/speed-matters
+[^2]: https://www.goodreads.com/book/show/40121378-atomic-habits
 [^3]: https://www.goodreads.com/book/show/11084145-steve-jobs
