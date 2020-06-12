@@ -12,6 +12,10 @@
 }
 
 .post-content {
+  h1{
+    text-align: left;
+    line-height: 2rem;
+  }
   margin: auto;
   font-size: 1.05rem;
   font-family: 'Helvetica', monospace;
@@ -24,6 +28,9 @@
   padding-right: 5vw;
   padding-top: 10px;
   padding-bottom: 20px;
+  p{
+    overflow: hidden;
+  }
   a {
     color: rgb(49, 48, 48);
     transition: 0.3s;
@@ -48,11 +55,5 @@
 @media screen and (max-width: 1000px) {
   .post-content {
     width: 80%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .post-content {
-    width: 98%;
   }
 }
