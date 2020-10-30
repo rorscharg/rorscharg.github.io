@@ -5,3 +5,12 @@ public
 .intermediate-representation/
 .cache/
 yarn.lock
+
+
+# dotenv environment variables files
+.env
+.env.development
+.env.production
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/jeanarjean.github.io/v16/.suo

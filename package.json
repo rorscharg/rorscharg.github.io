@@ -7,6 +7,7 @@
     "url": "https://github.com/rorscharg/rorscharg.github.io"
   },
   "dependencies": {
+    "@stripe/stripe-js": "^1.11.0",
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
     "acorn": "^6.4.2",
