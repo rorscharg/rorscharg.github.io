@@ -23,6 +23,9 @@ class Header extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleResize.bind(this))
+        this.setState = (state,callback)=>{
+        return;
+    };
   }
 
   toggle() {

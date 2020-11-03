@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+
 .home-container {
   overflow: auto;
 }
@@ -27,3 +29,47 @@
     width: 94%;
   }
 }
+
+.poster-item-container {
+  .print-title {
+    text-decoration: none;
+  }
+  
+  .poster-description-container {
+    display: flex;
+    font-family: 'Rokkitt', serif;
+    line-height: 1rem;
+
+    text-align: justify;
+    justify-content: center;;
+    align-items: center;
+    width: 50%;
+    height: 80vh;
+    .poster-description-text {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+    .buy-button-container {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .poster-image-container {
+    text-align: center;
+  }
+
+  .poster-image {
+    height: 75vh;
+
+  }
+    @media screen and (min-width: 35.42em) {
+    .poster-image-container {
+      float: left;
+      width: 50%;
+    }
+  }
+}
+

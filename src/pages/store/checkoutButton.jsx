@@ -7,9 +7,10 @@ const buttonStyles = {
   color: "#000",
   padding: "12px 60px",
   boxShadow: "2px 5px 10px rgba(0,0,0,.1)",
-  backgroundColor: "rgb(255, 178, 56)",
+  backgroundColor: "#A0CED9",
   borderRadius: "6px",
   letterSpacing: "1.5px",
+  cursor: "pointer"
 }
 const buttonDisabledStyles = {
   opacity: "0.5",
@@ -22,7 +23,7 @@ const getStripe = () => {
   }
   return stripePromise
 }
-const Checkout = () => {
+const CheckoutButton = () => {
   const [loading, setLoading] = useState(false)
   const redirectToCheckout = async event => {
     event.preventDefault()
@@ -40,18 +41,16 @@ const Checkout = () => {
     }
   }
   return (
-    <div>
-      <img src='/store/print1.jpg' />
-      <button
-        disabled={loading}
-        style={
-          loading ? { ...buttonStyles, ...buttonDisabledStyles } : buttonStyles
-        }
-        onClick={redirectToCheckout}
-      >
-        BUY MY BOOK
-      </button>
-    </div>
+    <button
+      disabled={loading}
+      style={
+        loading ? { ...buttonStyles, ...buttonDisabledStyles } : buttonStyles
+      }
+      onClick={redirectToCheckout}
+    >
+      Buy
+    </button>
   )
 }
-export default Checkout
+
+export default CheckoutButton

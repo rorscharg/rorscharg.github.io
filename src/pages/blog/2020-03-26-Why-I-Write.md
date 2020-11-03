@@ -22,7 +22,7 @@ What makes me think I have potential is simple, I have a relatively sharp brain,
 pretty good work habits, a good upbringing and a lot of free time. I spend a lot of time reading or working
 on side projects. I absorb information. I absorb a lot of information, 
 but I don't take the time to share it, I don't
-also take the time to fully *ingest* the information, which means I might absorb
+either take the time to fully *ingest* the information, which means I might absorb
 it but I get no use out of it. I don't take the time to master it.
 
 I might have the potential I think I have, but I don't live up to it, I avoid living up to it, I get interested in many things but I don't focus. I've noticed that while having quite a few interests is very fun,
@@ -32,8 +32,8 @@ Not deciding to focus on any one thing. Today I've decided to take the first
 step, I've decided that my focus would be programming.
 
 On another note, I've also been avoiding sharing the information I absorb because I'm afraid I don't master it
-enough to have a conversation about it. I want to hold myself accountable for what
-I choose to learn, and engage myself to master the information I absorb in order to be able to share it afterwards.
+enough to not look dumb when I talk about it. I also want to hold myself accountable for what
+I choose to learn, engage myself to master the information I absorb in order to be able to share it afterwards.
 
 # Focus
 So I've taken the decision to focus on programming for now, or at least for a considerable amount of time, I want
@@ -43,7 +43,8 @@ to focus on one thing at a time (this is an idea from Steve Pavlona [^1]). I fig
 <!-- ## A LEVER TO MOVE THE WORLD  I LIKE THIS -->
 ### What is a strategy
 According to Richard P. Rumelt, a strategy has three distinct but complementary parts.  
-This is directly taken from the book *Good Strategy, Bad Strategy*.[^2]
+This is directly taken from the book *Good Strategy, Bad Strategy*.[^2]  
+A strategy is:
 1. A *diagnosis* that defines or explains the nature of the challenge.
 A good diagnosis simplifies the often overwhelming complexity of reality by 
 identifying certain aspects of the situation as critical.
@@ -64,7 +65,7 @@ that are coordinated with one another to work together in accomplishing the guid
 
 ### Coherent Actions
 *  Have a clear focus every week with time set aside especially for it.
-*  Write a post a week to keep myself accountable of mastering what I focused on or learned this week.
+*  Write a post a week to keep myself accountable on mastering what I focused on or learned this week.
 
 ### Risk
 
@@ -72,14 +73,14 @@ that are coordinated with one another to work together in accomplishing the guid
 Right now my focus is programming, which is also my job, I might burn out if I spend
 all my time doing the same thing without getting rest.
 
-##### Risk Mitigation
+#### Risk Mitigation
 A good way to mitigate this risk is to make sure I get sufficient rest time even if I spend
 time programming outside of work.
 
 
-## Reflections on the Strategy
+### Reflections on the Strategy
 I don't know if the premise of the mentioned book applies well to personal growth, but my current
-methods aren't taking me where I want to, a change of priority is then in order.
+methods aren't taking me where I want to, a change of focus is then in order.
 
 *To move in one direction, you must forgo all others. To choose one goal is to forsake other possible goals.* - Mastery, George Leonard [^3]
 
