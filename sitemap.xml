@@ -3,12 +3,13 @@
 <url> <loc>https://jeanarjean.com/blog/2020-06-11-freeeee/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://jeanarjean.com/blog/2020-06-06-carpal-tunnel-syndrome-running-caffeine/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://jeanarjean.com/blog/2020-03-26-Why-I-Write/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://jeanarjean.com/blog/2019-02-19-lessons-brainy-dump/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://jeanarjean.com/tags/life/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://jeanarjean.com/tags/web-development/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jeanarjean.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jeanarjean.com/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://jeanarjean.com/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://jeanarjean.com/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://jeanarjean.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jeanarjean.com/store/checkoutButton/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jeanarjean.com/store/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://jeanarjean.com/projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://jeanarjean.com/projects/photography/2017_fall_montreal/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://jeanarjean.com/projects/photography/2017_summer_beauce/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -22,5 +23,4 @@
 <url> <loc>https://jeanarjean.com/projects/photography/2019_winter_montreal/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://jeanarjean.com/projects/photography/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://jeanarjean.com/projects/programming/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://jeanarjean.com/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
