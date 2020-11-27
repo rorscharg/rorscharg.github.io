@@ -67,6 +67,9 @@
       }
       .print-title {
         text-decoration: none;
+        @media screen and (max-width: 1200px) {
+          margin-bottom: 10px;
+        }
       }
     }
   }
