@@ -25,6 +25,10 @@ const CheckoutButton = () => {
     const stripe = await getStripe()
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
+      billingAddressCollection: "required",
+      shippingAddressCollection: {
+        allowedCountries: ['CA'],
+      },
       lineItems: [{ price: `${process.env.LINE_ITEM}`, quantity: 1 }],
       successUrl: `${process.env.WEBSITE_URL}/store/success/`,
       cancelUrl: `${process.env.WEBSITE_URL}/store`,

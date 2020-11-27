@@ -20,12 +20,12 @@ class WebsiteHome extends React.Component {
             </div>
             <div className="poster-description-container">
               <div>
-                <div className="poster-description-text">Des patates pilées, du steak haché, du maïs en crème, pis kin toé, du pâté chinois. Baptême de crisse de cibole de viande à chien, j'en ai plein mon casse d'être toute décalissé de la vie, avec le windshier de mon char toute déviargé par l'autre esti de cave. Il va manger un esti de char de marde tu vas vouère.</div>
+                <div className="poster-description-text">A print to frame and show off to your date in order to make him/her think you're an art connoisseur.</div>
                 <br/>
-                <div className="poster-description-additional-information">24x36 inches</div>
+                <div className="poster-description-additional-information">24x36 inches prenium matte print</div>
                 <div className="poster-description-additional-information">Canada Only</div>
                 <div className="poster-description-additional-information">49.98$ CAD (41.99$+7.99$ for shipping)</div>
-                <div className="poster-description-additional-information">Available for purchase the whole month of December</div>
+                <div className="poster-description-additional-information">Available during December</div>
                 <div className="poster-description-additional-information">3 to 5 days shipping</div>
                 <div className="buy-button-container">
                   <CheckoutButton />
