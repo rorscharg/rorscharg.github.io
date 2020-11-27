@@ -50,6 +50,10 @@
         transition: background 0.2s ease, color 0.2s ease;
         z-index: 2;
       }
+
+      @media screen and (max-width: 400px){
+        margin-top: 10px;
+      }
     }
   }
   .newsletter-error-container {

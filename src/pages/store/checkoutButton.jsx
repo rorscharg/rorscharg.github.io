@@ -1,16 +1,10 @@
 import React, { useState } from "react"
 import { loadStripe } from "@stripe/stripe-js"
+import './index.scss'
 
 const buttonStyles = {
-  fontSize: "13px",
-  textAlign: "center",
-  color: "#000",
-  padding: "12px 60px",
   boxShadow: "2px 5px 10px rgba(0,0,0,.1)",
-  backgroundColor: "#A0CED9",
-  borderRadius: "6px",
   letterSpacing: "1.5px",
-  cursor: "pointer"
 }
 const buttonDisabledStyles = {
   opacity: "0.5",
@@ -19,7 +13,7 @@ const buttonDisabledStyles = {
 let stripePromise
 const getStripe = () => {
   if (!stripePromise) {
-    stripePromise = loadStripe("pk_test_U1b20yat3uWjIQ6Or5deHeiF")
+    stripePromise = loadStripe(process.env.STRIPE_PK_TEST)
   }
   return stripePromise
 }
@@ -31,9 +25,9 @@ const CheckoutButton = () => {
     const stripe = await getStripe()
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
-      lineItems: [{ price: "price_1HeUO1LQLEvRIcDUkSjWsBi7", quantity: 1 }],
-      successUrl: `http://localhost:8000/page-2/`,
-      cancelUrl: `http://localhost:8000/`,
+      lineItems: [{ price: `${process.env.LINE_ITEM}`, quantity: 1 }],
+      successUrl: `${process.env.WEBSITE_URL}/store/success/`,
+      cancelUrl: `${process.env.WEBSITE_URL}/store`,
     })
     if (error) {
       console.warn("Error:", error)
@@ -43,6 +37,7 @@ const CheckoutButton = () => {
   return (
     <button
       disabled={loading}
+      className="checkout-button"
       style={
         loading ? { ...buttonStyles, ...buttonDisabledStyles } : buttonStyles
       }

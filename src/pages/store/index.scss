@@ -1,15 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
 
 .home-container {
   overflow: auto;
-}
-
-.home-content {
-  margin: auto;
-  width: 40%;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-bottom: 2.5rem;    /* Footer height */
 }
 
 @media screen and (max-width: 1400px) {
@@ -30,24 +22,78 @@
   }
 }
 
-.poster-item-container {
-  .print-title {
-    text-decoration: none;
+@media screen and (min-width: 1200px) {
+  .poster-left-margin {
+    width: 0vw;
   }
-  
+
+  .poster-right-margin {
+    width: 0vw;
+  }
+}
+
+.poster-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20vh;
+
+  .poster-left-margin {
+    width: 20vw;
+  }
+
+  .poster-right-margin {
+    width: 20vw;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .poster-left-margin {
+      width: 0vw;
+    }
+
+    .poster-right-margin {
+      width: 0vw;
+    }
+  }
+  .poster-image-container {
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.767);
+
+      .poster-image {
+        height: 75vh;
+      }
+      .print-title {
+        text-decoration: none;
+      }
+    }
+  }
+
   .poster-description-container {
     display: flex;
-    font-family: 'Rokkitt', serif;
+    font-family: "Rokkitt", serif;
     line-height: 1rem;
 
     text-align: justify;
-    justify-content: center;;
+    justify-content: center;
     align-items: center;
-    width: 50%;
+    max-width: 30vw;
     height: 80vh;
+    @media screen and (max-width: 1200px) {
+      margin-top: 20px;
+      max-width: unset;
+      align-items: unset;
+    }
+
     .poster-description-text {
       padding-left: 15%;
       padding-right: 15%;
+    }
+
+    .poster-description-additional-information {
+      text-align: center;
     }
 
     .buy-button-container {
@@ -56,20 +102,34 @@
       justify-content: center;
     }
   }
-
-  .poster-image-container {
-    text-align: center;
-  }
-
-  .poster-image {
-    height: 75vh;
-
-  }
-    @media screen and (min-width: 35.42em) {
-    .poster-image-container {
-      float: left;
-      width: 50%;
-    }
-  }
 }
 
+.checkout-button {
+  font-size: 1.5rem;
+  padding: 12px 60px;
+  margin-left: -2px;
+  font-family: inherit;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  outline: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: black;
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+
+  &:active {
+    background-color: #f2f2f2;
+    color: black;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  &:hover {
+    background-color: #f2f2f2;
+    color: black;
+    transition: background 0.2s ease, color 0.2s ease;
+    z-index: 2;
+  }
+}

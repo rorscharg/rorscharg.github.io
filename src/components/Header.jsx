@@ -52,6 +52,8 @@ class Header extends Component {
               onClick={(this.state.isOpen = false)}
             />
             <br />
+            <MenuItem name="Shop" link="/store" />
+            <br />
             <MenuItem name="Projects" link="/projects" />
             <br />
             <MenuItem name="Thoughts" link="/blog" />
@@ -81,8 +83,8 @@ class Header extends Component {
               </Link>
             </div>
             <div className="right-desktop menu-item">
+              <MenuItem name="Shop" link="/store" />
               <MenuItem name="Thoughts" link="/blog" />
-              <MenuItem name="About" link="/about" />
             </div>{' '}
           </div>
         </div>

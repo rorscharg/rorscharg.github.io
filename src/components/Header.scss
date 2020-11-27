@@ -39,6 +39,7 @@
       min-width: 664.797px;
       margin: auto;
       height: 12vh;
+
       @media screen and (max-width: 1400px) {
         width: 60%;
       }
@@ -81,7 +82,12 @@
     .title-mobile {
       display: inline-block;
       margin-left: 3vh;
-      font-size: 1.55rem;
+      h1 {
+        font-size: 1.55rem;
+      }
+    }
+
+    @media screen and (min-width: 300px) {
     }
     .right-content {
       display: inline-block;
