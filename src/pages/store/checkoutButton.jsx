@@ -1,5 +1,7 @@
-import React, { useState } from "react"
 import { loadStripe } from "@stripe/stripe-js"
+import PropTypes from "prop-types"
+import React, { useState } from "react"
+import { connect } from "react-redux"
 import './index.scss'
 
 const buttonStyles = {
@@ -10,6 +12,7 @@ const buttonDisabledStyles = {
   opacity: "0.5",
   cursor: "not-allowed",
 }
+
 let stripePromise
 const getStripe = () => {
   if (!stripePromise) {
@@ -17,7 +20,11 @@ const getStripe = () => {
   }
   return stripePromise
 }
-const CheckoutButton = () => {
+
+
+const CheckoutButton = ({ itemsInCart }) => {
+  const lineItems = Object.keys(itemsInCart).map((item) => { return { price: itemsInCart[item].itemId, quantity: itemsInCart[item].quantity } })
+  debugger;
   const [loading, setLoading] = useState(false)
   const redirectToCheckout = async event => {
     event.preventDefault()
@@ -29,7 +36,7 @@ const CheckoutButton = () => {
       shippingAddressCollection: {
         allowedCountries: ['CA'],
       },
-      lineItems: [{ price: `${process.env.LINE_ITEM}`, quantity: 1 }],
+      lineItems: lineItems,
       successUrl: `${process.env.WEBSITE_URL}/store/success/`,
       cancelUrl: `${process.env.WEBSITE_URL}/store`,
     })
@@ -52,4 +59,14 @@ const CheckoutButton = () => {
   )
 }
 
-export default CheckoutButton
+CheckoutButton.propTypes = {
+  itemsInCart: PropTypes.object.isRequired
+}
+
+const mapStateToProps = ({ itemsInCart: itemsInCart }) => {
+  return { itemsInCart };
+}
+
+const ConnectedCheckoutButton = connect(mapStateToProps)(CheckoutButton)
+
+export default ConnectedCheckoutButton
