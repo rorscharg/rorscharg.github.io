@@ -9,17 +9,28 @@ const buttonStyles = {
 }
 
 const Cart = ({ itemsInCart }) => {
-  debugger;
   const cartItems = Object.keys(itemsInCart).map((key) => {
     var item = itemsInCart[key]
-    return <div key={item.itemId}>
-      <img src={item.imagePath} className="cart-image"></img>
-      <span>{item.itemId} :{item.quantity}</span>
-    </div>
+    return <tr key={item.itemId}>
+      <th>
+        <img src={item.imagePath} className="cart-image"></img>
+      </th>
+      <th>
+        <span>{item.title}: {item.quantity}</span>
+      </th>
+    </tr>
   });
-  return <div>
-    {cartItems}
-    <CheckoutButton />
+  return <div className="cart-checkout-container">
+    <table>
+      <tbody>
+        {cartItems}
+      </tbody>
+    </table>
+    <div>
+      { cartItems.length > 0 &&
+      <CheckoutButton />
+      }
+    </div>
   </div>
 }
 

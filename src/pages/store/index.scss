@@ -84,6 +84,8 @@
     align-items: center;
     max-width: 30vw;
     height: 80vh;
+    margin-left: 20px;
+
     @media screen and (max-width: 1200px) {
       margin-top: 20px;
       max-width: unset;
@@ -173,4 +175,11 @@
 .cart-image {
   width: 50px;
   height: auto;
+}
+
+.cart-checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
 }

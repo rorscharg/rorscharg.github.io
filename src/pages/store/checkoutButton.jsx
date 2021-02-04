@@ -24,7 +24,6 @@ const getStripe = () => {
 
 const CheckoutButton = ({ itemsInCart }) => {
   const lineItems = Object.keys(itemsInCart).map((item) => { return { price: itemsInCart[item].itemId, quantity: itemsInCart[item].quantity } })
-  debugger;
   const [loading, setLoading] = useState(false)
   const redirectToCheckout = async event => {
     event.preventDefault()

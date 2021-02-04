@@ -7,25 +7,24 @@ const buttonStyles = {
   letterSpacing: "1.5px",
 }
 
-const AddToCartButton = ({id, imagePath, addToCart}) => {
+const AddToCartButton = ({item, addToCart}) => {
   return <div>
-    <button className="add-to-cart-button" style={buttonStyles} onClick={() => addToCart(id, imagePath)}>Add To Cart</button>
+    <button className="add-to-cart-button" style={buttonStyles} onClick={() => addToCart(item)}>Add To Cart</button>
   </div>
 }
 
 AddToCartButton.propTypes = {
-  id: PropTypes.string.isRequired,
-  imagePath: PropTypes.string.isRequired,
+  item: PropTypes.object.isRequired,
   addToCart: PropTypes.func.isRequired
 }
 
 const mapStateToProps = ({}, ownProps) => {
-  const { id , imagePath } = ownProps;
-  return { itemId: id};
+  const { item } = ownProps;
+  return { item };
 }
 
 const mapDispatchToProps = dispatch => {
-  return { addToCart: (itemId, imagePath) => dispatch({ type: `ADD_TO_CART`, itemId, imagePath }) }
+  return { addToCart: (item) => dispatch({ type: `ADD_TO_CART`, item }) }
 }
 
 const ConnectedAddToCartButton = connect(mapStateToProps, mapDispatchToProps)(AddToCartButton)
