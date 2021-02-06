@@ -13,12 +13,12 @@ const StoreItem = ({item}) => {
         </a>
       </div>
       <div className="poster-description-container">
-        <div>
+        <div className="poster-description-text-container">
           <div className="poster-description-text">{item.description}</div>
           <br />
           <div className="poster-description-additional-information">24x36 inches prenium matte print</div>
           <div className="poster-description-additional-information">Canada Only</div>
-          <div className="poster-description-additional-information">49.98$ CAD (41.99$+7.99$ for shipping)</div>
+          <div className="poster-description-additional-information">{item.price}.00$</div>
           <div className="poster-description-additional-information">Available during December</div>
           <div className="poster-description-additional-information">3 to 5 days shipping</div>
           <div className="buy-button-container">

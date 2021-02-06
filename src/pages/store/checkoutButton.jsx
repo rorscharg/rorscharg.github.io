@@ -2,7 +2,7 @@ import { loadStripe } from "@stripe/stripe-js"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import { connect } from "react-redux"
-import './index.scss'
+import './cart.scss'
 
 const buttonStyles = {
   boxShadow: "2px 5px 10px rgba(0,0,0,.1)",
