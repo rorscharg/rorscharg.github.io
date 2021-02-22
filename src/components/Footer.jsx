@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaInstagram } from 'react-icons/fa'
 import './Footer.scss'
 
 class Footer extends Component {
@@ -13,9 +13,6 @@ class Footer extends Component {
           </a>
           <a className="external-links" href="https://github.com/jeanarjean">
             <FaGithub className="icon-style" />
-          </a>
-          <a className="external-links" href="https://twitter.com/rorscharg">
-            <FaTwitter className="icon-style" />
           </a>
         </div>
         <div></div>
