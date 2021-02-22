@@ -1,7 +1,7 @@
-import { loadStripe } from "@stripe/stripe-js"
-import PropTypes from "prop-types"
-import React, { useState } from "react"
-import { connect } from "react-redux"
+import { loadStripe } from '@stripe/stripe-js'
+import PropTypes from 'prop-types'
+import React, { useState } from 'react'
+import { connect } from 'react-redux'
 import './cart.scss'
 
 const buttonStyles = {
@@ -23,7 +23,9 @@ const getStripe = () => {
 
 
 const CheckoutButton = ({ itemsInCart }) => {
+  var shipping = process.env.SHIPPING;
   const lineItems = Object.keys(itemsInCart).map((item) => { return { price: itemsInCart[item].itemId, quantity: itemsInCart[item].quantity } })
+  lineItems.push({price: shipping, quantity: 1})
   const [loading, setLoading] = useState(false)
   const redirectToCheckout = async event => {
     event.preventDefault()

@@ -37,6 +37,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20vh;
+  width: 100%;
 
   .poster-left-margin {
     width: 20vw;
@@ -46,15 +47,6 @@
     width: 20vw;
   }
 
-  @media screen and (max-width: 1200px) {
-    .poster-left-margin {
-      width: 0vw;
-    }
-
-    .poster-right-margin {
-      width: 0vw;
-    }
-  }
   .poster-image-container {
     text-align: center;
 
@@ -74,6 +66,26 @@
     }
   }
 
+  @media screen and (max-width: 1200px) {
+    .poster-left-margin {
+      width: 0vw;
+    }
+
+    .poster-right-margin {
+      width: 0vw;
+    }
+
+    .poster-image-container {
+
+      a{
+        .poster-image {
+          height: auto;
+          width: 100vw;
+        }
+      }
+    }
+  }
+
   .poster-description-container {
     display: flex;
     font-family: "Rokkitt", serif;
@@ -83,7 +95,6 @@
     justify-content: center;
     align-items: center;
     max-width: 30vw;
-    height: 80vh;
     margin-left: 20px;
 
     .poster-description-text-container

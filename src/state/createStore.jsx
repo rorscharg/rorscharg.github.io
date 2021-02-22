@@ -1,25 +1,26 @@
 import { createStore as reduxCreateStore } from "redux";
 
 const reducer = (state, action) => {
+  const key = action?.item?.itemId + action.size
+  debugger;
   if (action.type === `ADD_TO_CART`) {
     var stateToApply = { itemsInCart: { ...state.itemsInCart } };
-    if (state.itemsInCart[action.item.itemId]) {
-      stateToApply.itemsInCart[action.item.itemId] = { itemId: action.item.itemId, quantity: state.itemsInCart[action.item.itemId].quantity + 1, imagePath: action.item.imagePath, title: action.item.title, price: action.item.price };
-    }
-    else {
-      stateToApply.itemsInCart[action.item.itemId] = { itemId: action.item.itemId, quantity: 1, imagePath: action.item.imagePath, title: action.item.title, price: action.item.price };
-    }
+
+    stateToApply.itemsInCart[key] = { itemId: action.item.itemId, quantity: 1, imagePath: action.item.imagePath, title: action.item.title, price: action.item.price, size: action.size };
 
     state = Object.assign({}, state, stateToApply)
   }
   else if (action.type === `MODIFY_ITEM_QUANTITY`) {
-    debugger;
     var quantity = parseInt(action.quantity)
-    var itemId = action.item.itemId
 
     var stateToApply = { itemsInCart: { ...state.itemsInCart } };
 
-    stateToApply.itemsInCart[itemId] = { itemId: action.item.itemId, quantity: quantity, imagePath: action.item.imagePath, title: action.item.title, price: action.item.price };
+    if (quantity == 0) {
+      delete stateToApply.itemsInCart[key];
+    }
+    else {
+      stateToApply.itemsInCart[key] = { itemId: action.item.itemId, quantity: quantity, imagePath: action.item.imagePath, title: action.item.title, price: action.item.price, size: action.size };
+    }
 
     state = Object.assign({}, state, stateToApply);
   }

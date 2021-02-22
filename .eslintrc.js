@@ -1,10 +1,11 @@
 module.exports = {
   "env": {
     "browser": true,
-    "es6": true,
+    "es2020": true,
   },
   "plugins": [
     "react",
+    "import-quotes"
   ],
   "globals": {
     "graphql": false,
@@ -15,5 +16,8 @@ module.exports = {
       "experimentalObjectRestSpread": true,
       "jsx": true,
     },
+  },
+  "rules": {
+      "import-quotes/import-quotes": [1, "single"]
   }
 }
