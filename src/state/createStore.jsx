@@ -2,7 +2,6 @@ import { createStore as reduxCreateStore } from "redux";
 
 const reducer = (state, action) => {
   const key = action?.item?.itemId + action.size
-  debugger;
   if (action.type === `ADD_TO_CART`) {
     var stateToApply = { itemsInCart: { ...state.itemsInCart } };
 

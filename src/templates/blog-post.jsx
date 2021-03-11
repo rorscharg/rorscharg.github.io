@@ -1,14 +1,14 @@
+import { graphql, Link } from 'gatsby'
+import get from 'lodash/get'
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import get from 'lodash/get'
 import './blog-post.scss'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const image = post.frontmatter.image.childImageSharp.fluid.src
+    const image = post.frontmatter.image?.childImageSharp.fluid.src
     const backgroundColor = post.frontmatter.backgroundColor
     const tags = post.frontmatter.tags
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')

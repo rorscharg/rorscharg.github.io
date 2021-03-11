@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: 'https://jeanarjean.com',
   },
   plugins: [
-      {
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
@@ -15,7 +15,7 @@ module.exports = {
       }
     },
     {
-    resolve: `gatsby-plugin-sitemap`
+      resolve: `gatsby-plugin-sitemap`
     },
     `gatsby-plugin-sass`,
     {
@@ -33,6 +33,19 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+            },
+          },
+          {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+              plugins: [
+                {
+                  resolve: `gatsby-remark-highlight-code`,
+                  options: {
+                    terminal: 'none'
+                  }
+                },
+              ],
             },
           },
           {
